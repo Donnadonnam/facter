@@ -1,5 +1,4 @@
-module Facter
-  module Acceptance
+#   module Acceptance
     module UserFactUtils
 
       # Determine paths for testing custom and external facts.
@@ -91,8 +90,7 @@ module Facter
       #
       def external_fact_content(platform, key='external_fact', value='test_value')
         unix_content = <<EOM
-#!/bin/sh
-echo "#{key}=#{value}"
+#   echo "#{key}=#{value}"
 EOM
 
         win_content = <<EOM
